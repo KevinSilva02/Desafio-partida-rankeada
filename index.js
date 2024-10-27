@@ -1,5 +1,5 @@
 let NumVitorias = 53
-let NumDerrotas =3
+let NumDerrotas = 10
 
 
 let totalVitorias = calculoRankeada(NumVitorias, NumDerrotas)
