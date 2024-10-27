@@ -1,36 +1,36 @@
-let NumVitorias = 53
-let NumDerrotas = 10
+let numberVictory = 53
+let numberLost = 10
 
 
-let totalVitorias = calculoRankeada(NumVitorias, NumDerrotas)
-let resulNivel = classificacao(totalVitorias)
+let totalVictory = calculationRankeada(numberVictory, numberLost)
+let resultLevel = classification(totalVictory)
 
-console.log(`O Herói tem de saldo ${totalVitorias} e está no nível de ${resulNivel}`)
+console.log(`O Herói tem de saldo ${totalVictory} e está no nível de ${resultLevel}`)
 
 
-function calculoRankeada(qtdVitorias, qtdDerrotas){
-    let result = qtdVitorias - qtdDerrotas
+function calculationRankeada(qtdVictory, qtdLost){
+    let result = qtdVictory - qtdLost
     return result
 }
 
-function classificacao(Vitorias){
-    let nivel
-    if(Vitorias < 10){
-        nivel = "Ferro"
-    } else if (Vitorias > 10 && Vitorias <= 20) {
-        nivel = "Bronze"
-    } else if (Vitorias > 20 && Vitorias <= 50) {
-        nivel = "Prata"
-    } else if (Vitorias > 50 && Vitorias <= 80) {
-        nivel = "Ouro"
-    } else if (Vitorias > 80 && Vitorias <= 90) {
-        nivel = "Diamante"
-    } else if (Vitorias > 91 && Vitorias <= 100) {
-        nivel = "Lendário"
+function classification(Victory){
+    let level
+    if(Victory < 10){
+        level = "Ferro"
+    } else if (Victory > 10 && Victory <= 20) {
+        level = "Bronze"
+    } else if (Victory > 20 && Victory <= 50) {
+        level = "Prata"
+    } else if (Victory > 50 && Victory <= 80) {
+        level = "Ouro"
+    } else if (Victory > 80 && Victory <= 90) {
+        level = "Diamante"
+    } else if (Victory > 91 && Victory <= 100) {
+        level = "Lendário"
     } else {
-        nivel = "Imortal"
+        level = "Imortal"
     }
 
-    return nivel
+    return level
 }
 
